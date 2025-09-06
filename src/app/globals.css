@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior:smooth;
+}
+
+/* #btn-container {
+  background-image: linear-gradient( 177.6deg,  rgba(20,0,113,1) 15.3%, rgba(1,0,62,1) 91.3% );
+} */
+
+    #myImg{
+      border-color: #0062ff;
+        }
+    #myName{
+      /* color: #1c1cff; */
+      color: #0062ff;
+    }
+    #links:hover{
+      color:#3270d3;
+      transition: color 0.3s ease;
+    }
+
+    #about{
+      /* background-image: linear-gradient( 177.6deg,  rgba(20,0,113,1) 15.3%, rgba(1,0,62,1) 91.3% ); */
+      /* background-image: radial-gradient( circle farthest-corner at -24.7% -47.3%,  rgba(6,130,165,1) 0%, rgba(34,48,86,1) 66.8%, rgba(15,23,42,1) 100.2% ); */
+      /* background-image: radial-gradient( circle 427px at 51.8% 56.2%,  rgba(0,122,255,1) 0%, rgba(0,51,102,1) 64.4% ); */
+      background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(54, 123, 252) 16.3%, rgba(0,41,118,1) 100.2% );
+    }
+    #education{
+      /* background-image: linear-gradient( 177.6deg,  rgba(20,0,113,1) 15.3%, rgba(1,0,62,1) 91.3% ); */
+      /* background-image: radial-gradient( circle farthest-corner at -24.7% -47.3%,  rgba(6,130,165,1) 0%, rgba(34,48,86,1) 66.8%, rgba(15,23,42,1) 100.2% ); */
+      /* background-image: radial-gradient( circle 427px at 51.8% 56.2%,  rgba(0,122,255,1) 0%, rgba(0,51,102,1) 64.4% ); */
+      background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(54,123,252,1) 16.3%, rgba(0,41,118,1) 100.2% );
+    }
+    #inner-edu-div{
+      /* background-image: linear-gradient( 109.6deg,  rgba(163,213,255,1) 11.3%, rgba(4,137,137,1) 86.7% );    */
+      /* background-image: radial-gradient( circle 427px at 51.8% 56.2%,  rgba(0,122,255,1) 0%, rgba(0,51,102,1) 64.4% ); */
+      /* background-image: linear-gradient( 178deg,  rgba(74,149,175,1) 2.8%, rgba(200,239,249,1) 93.8% ); */
+      background-image: linear-gradient( 177.6deg,  rgba(20,0,113,1) 15.3%, rgba(1,0,62,1) 91.3% );
+    }
+    
+    #project-cards{
+      /* background: linear-gradient(182deg,rgba(2, 0, 36, 1) 0%, rgba(38, 38, 189, 1) 91%, rgba(0, 212, 255, 1) 100%); */
+      /* background: linear-gradient(182deg,rgba(2, 0, 36, 1) 0%, rgba(38, 38, 189, 1) 91%, rgba(0, 212, 255, 1) 100%); */
+      /* background: linear-gradient(180deg,rgba(41, 18, 252, 1) 0%, rgba(25, 9, 115, 1) 0%, rgba(10, 109, 196, 1) 100%) */
+    background: #001f54
+    }
+    #contact{
+    background-image: radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% );
+    }
+    /* #footer{
+      background-image: radial-gradient( circle 645.7px at 10% 20%,  rgba(0,0,0,1) 20.3%, rgba(51,49,49,1) 100.3% );
+    } */

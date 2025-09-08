@@ -14,7 +14,7 @@ const projects = [
     description: "A personal portfolio built with Next.js and Framer Motion animations.",
     tech: ["Next.js", "Framer Motion", "TailwindCSS"],
     image: "portfolio.png",
-    demo: "",
+    demo: "#",
     github: "https://github.com/sarthakk20/Portfolio.git",
   },
   {

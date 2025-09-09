@@ -13,8 +13,8 @@ return (
         About Me</h2>
         <p 
         className="max-w-3xl mx-auto text-center text-gray-700 dark:text-gray-300 md:text-xl">
-        I’m a full stack developer focusing on React, Next.js, and MERN stack.
-        I enjoy solving coding challenges (DSA in C++) and exploring markets. I
+        I’m a frontend and a full stack developer focusing on React, Next.js, and MERN stack.
+        I'm also solving coding challenges (DSA in C++) and exploring markets. I
         love turning ideas into functional, user-friendly apps.
         </p>
         </section>

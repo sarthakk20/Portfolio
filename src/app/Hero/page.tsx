@@ -18,12 +18,19 @@ function Hero() {
             // transition={{ duration: 0.8 }}
             className="text-4xl font-bold md:text-5xl md:font-extrabold mb-4"
             >
-            Hi, I’m <span id='myName' /*className="text-blue-600"*/>Sarthak Sonawane.</span>
+            Hi, I’m <span id='myName'>Sarthak Sonawane.</span>
         </h1>
         <p className="text-sm md:text-lg text-gray-600 dark:text-gray-300 max-w-xl">
-            A passionate MERN & Full Stack Developer who loves building web apps
+            A passionate Frontend & Full Stack Developer who loves building web apps
             that solve real-world problems.
         </p>
+        <div id='resume' className="mt-6 flex justify-center hover:cursor-pointer">
+            <a href="SarthakSonawane-NewResume.pdf" download>
+            <button 
+            className='hover:cursor-pointer'
+            type="button">Download My Resume</button>
+            </a>
+        </div>
         </div>
     )
     }

@@ -31,13 +31,27 @@ html {
 /* #btn-container {
   background-image: linear-gradient( 177.6deg,  rgba(20,0,113,1) 15.3%, rgba(1,0,62,1) 91.3% );
 } */
-
+    #resume{
+        background-image: linear-gradient(to right, #005C97 0%, #363795  51%, #005C97  100%);
+        padding: 10px 15px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        border-radius: 10px;
+        display: block;
+      }
+    #resume:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
     #myImg{
       border-color: #0062ff;
         }
     #myName{
-      /* color: #1c1cff; */
-      color: #0062ff;
+      color: #0d62ff;
     }
     #links:hover{
       color:#3270d3;

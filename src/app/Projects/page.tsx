@@ -6,7 +6,7 @@ const projects = [
     description: "An authentication website with login, signup, forgot password and reset password using reset link functionalites.",
     tech: ["MongoDB", "React", "Node.js","Next.js", "MailTrap"],
     image: "authImg.jpg",
-    demo: "#",
+    demo: "https://github.com/sarthakk20/Next.js.git",
     github: "https://github.com/sarthakk20/Next.js.git",
   },
   {
@@ -14,7 +14,7 @@ const projects = [
     description: "A personal portfolio built with Next.js and Framer Motion animations.",
     tech: ["Next.js", "Framer Motion", "TailwindCSS"],
     image: "portfolio.png",
-    demo: "#",
+    demo: "https://sarthakdev-portfolio-9txi.vercel.app/",
     github: "https://github.com/sarthakk20/Portfolio.git",
   },
   {

@@ -1,5 +1,14 @@
 "use client";
+import {motion} from 'framer-motion'
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { delay: 0.2, duration: 0.6, ease: "easeIn" }, // use a valid string for ease
+  },
+};
 const projects = [
   {
     title: "Auth Using Next.js",
@@ -11,10 +20,10 @@ const projects = [
   },
   {
     title: "Portfolio Website",
-    description: "A personal portfolio built with Next.js and Framer Motion animations.",
-    tech: ["Next.js", "Framer Motion", "TailwindCSS"],
+    description: "A personal portfolio website built with Next.js, Tailwind and Framer Motion animations.",
+    tech: ["Next.js", "Framer Motion", "TailwindCSS","HTML","CSS"],
     image: "portfolio.png",
-    demo: "https://sarthakdev-portfolio-9txi.vercel.app/",
+    demo: "https://sarthakdev-orcin.vercel.app/",
     github: "https://github.com/sarthakk20/Portfolio.git",
   },
   {
@@ -41,12 +50,20 @@ export default function Projects() {
 
     <section id='Projects' className="min-h-screen md:px-10 flex flex-col justify-center items-center bg-black pt-15 px-10">
     <div className="max-w-6xl w-full scroll-smooth">
-      <h2 className="mt-10 mb-5 text-2xl md:text-3xl font-bold text-white text-center">
+      <motion.h2 
+        initial="hidden"
+        whileInView="visible"
+        animate="active"
+        variants={fadeUp}
+      className="mt-10 mb-5 text-2xl md:text-3xl font-bold text-white text-center">
       My Projects
-      </h2>
+      </motion.h2>
 
-  <div
-  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full py-5 ">
+  <motion.div
+    initial="hidden"
+    whileInView="visible"
+    variants={fadeUp}
+    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full py-5 ">
     {projects.map((project, index) => (
       <div
         key={index}
@@ -97,7 +114,7 @@ export default function Projects() {
         </div>
       </div>
     ))}
-    </div>
+      </motion.div>
     </div>
     </section>  
 

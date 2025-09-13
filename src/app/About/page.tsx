@@ -1,11 +1,11 @@
 'use client'
-import {motion} from 'framer-motion'
+import {easeInOut, motion as Motion} from 'framer-motion'
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: (i = 1) => ({
+  visible: (custom = 1) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.2, duration: 0.6, ease: "easeIn" },
+    transition: { delay: custom * 0.2, duration: 0.6, ease: easeInOut },
   }),
 };
 export default function about() {
@@ -18,41 +18,45 @@ return (
         
         id="about" 
         className="pt-10 pb-10 px-6 mx-5 bg-gray-100 dark:bg-gray-900 rounded-2xl">
-        <motion.h2 
+        <Motion.h2 
         initial="hidden"
         whileInView="visible"
         variants={fadeUp}
+        custom={0}
         className="text-2xl sm:text-2xl md:text-3xl font-bold text-center mb-6">
-        About Me</motion.h2>
-        <motion.p 
+        About Me</Motion.h2>
+        <Motion.p 
         initial="hidden"
         whileInView="visible"
         variants={fadeUp}
+        custom={1}
         className="max-w-3xl mx-auto text-center text-gray-700 dark:text-gray-300 md:text-xl">
-        I’m a frontend and a full stack developer focusing on React, Next.js, and MERN stack.
+        I’m a frMntend and a full stack developer focusing on React, Next.js, and MERN stack.
         I'm also solving coding challenges (DSA in C++) and exploring markets. I
         love turning ideas into functional, user-friendly apps.
-        </motion.p>
+        </Motion.p>
         </section>
 
         {/* EDUCATION SECTION */}
         <section 
         id="education" 
         className="pt-10 pb-10 px-6 mx-5 mt-5 bg-gray-100 dark:bg-gray-900 rounded-2xl">
-        <motion.h2 
+        <Motion.h2 
         initial="hidden"
         whileInView="visible"
         variants={fadeUp}
+        custom={2}
         className="text-2xl sm:text-2xl md:text-3xl font-bold text-center mb-6">
-        Education</motion.h2>
+        Education</Motion.h2>
         <div 
         id="outer-edu-div"
         className="max-w-3xl mx-auto flex flex-col justify-center items-center text-gray-700 dark:text-gray-300 shadow-3xl">
           {/* Degree education */}
-            <motion.div 
+            <Motion.div 
             initial="hidden"
             whileInView="visible"
             variants={fadeUp}
+            custom={3}
             id="inner-edu-div"
             className="bg-white mb-4 sm:text-left dark:bg-gray-700 p-6 rounded-lg shadow-md w-full"
             >
@@ -62,13 +66,14 @@ return (
             <p 
             className="text-sm sm:text-md md:text-lg text-gray-600 dark:text-gray-400">
             Mumbai University, 2022 - 2026</p>
-            </motion.div>
+            </Motion.div>
 
             {/* higher secondary education */}
-            <motion.div 
+            <Motion.div 
               initial="hidden"
               whileInView="visible"
               variants={fadeUp}
+              custom={4}
             id="inner-edu-div"
             className="bg-white mb-4 dark:bg-gray-700 p-6 rounded-lg shadow-md w-full"
             >
@@ -78,13 +83,14 @@ return (
             <p 
             className="text-sm sm:text-md md:text-lg text-gray-600 dark:text-gray-400">
             K.V Pendharkar College Of Science Dombiwali (E), 2020 - 2022</p>
-            </motion.div>
+            </Motion.div>
             
             {/* secondary education */}
-            <motion.div 
+            <Motion.div 
                 initial="hidden"
                 whileInView="visible"
                 variants={fadeUp}
+                custom={5}
                     
             id="inner-edu-div"
             className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md w-full"
@@ -96,7 +102,7 @@ return (
             <p 
             className="text-sm sm:text-md md:text-lg text-gray-600 dark:text-gray-400">
             K.B.L English High School Badlapur (w), 2019 - 2020</p>
-            </motion.div>
+            </Motion.div>
         </div>
         </section>
         </div>

@@ -1,16 +1,16 @@
 'use client'
 import React from 'react'
 import Link from 'next/link'
-import {motion} from 'framer-motion'
+import {easeOut, motion} from 'framer-motion'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import { MdEmail } from "react-icons/md";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: (i = 1) => ({
+  visible: (custom = 1) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" },
+    transition: { delay: custom * 0.2, duration: 0.6, ease: easeOut },
   }),
 };
 

@@ -1,12 +1,12 @@
 "use client";
-import {motion} from 'framer-motion'
+import {easeOut, motion} from 'framer-motion'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { delay: 0.2, duration: 0.6, ease: "easeIn" }, // use a valid string for ease
+    transition: { delay: 0.2, duration: 0.6, ease:easeOut}, // use a valid string for ease
   },
 };
 const projects = [

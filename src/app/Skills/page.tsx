@@ -1,6 +1,82 @@
 'use client'
 import React from 'react'
 import { easeOut, motion } from 'framer-motion'
+import {
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaGithub,
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaPython
+} from "react-icons/fa";
+
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMongodb,
+  SiExpress,
+  SiJavascript,
+  SiTypescript,
+  SiPostman,
+  SiVercel,
+  SiNetlify,
+  SiCplusplus,
+  SiMysql
+} from "react-icons/si";
+import { VscCode, VscVscode } from "react-icons/vsc";
+import { BsStars } from "react-icons/bs";
+
+const skillCategories = [
+  {
+    title: "Frontend",
+    emoji: "💻",
+    skills: [
+      { name: "HTML5", icon: <FaHtml5 />, color: "#E34F26" },
+      { name: "CSS3", icon: <FaCss3Alt />, color: "#1572B6" },
+      { name: "JavaScript", icon: <SiJavascript />, color: "#F7DF1E" },
+      { name: "React", icon: <FaReact />, color: "#61DAFB" },
+      { name: "Next.js", icon: <SiNextdotjs />, color: "#FFFFFF" },
+      { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "#06B6D4" },
+      { name: "Bootstrap", icon: <FaBootstrap />, color: "#7952B3" },
+    ],
+  },
+
+  {
+    title: "Backend",
+    emoji: "⚙️",
+    skills: [
+      { name: "Node.js", icon: <FaNodeJs />, color: "#339933" },
+      { name: "Express.js", icon: <SiExpress />, color: "#E2E2E2" },
+    ],
+  },
+
+  {
+    title: "Database",
+    emoji: "🗄️",
+    skills: [
+      { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" },
+      { name: "SQL", icon: <SiMysql />, color: "#4479A1" },
+    ],
+  },  
+  {
+    title: "Programming & Tools",
+    emoji: "🛠️",
+    skills: [
+      { name: "Python", icon: <FaPython />, color: "#3776AB" },
+      { name: "C++", icon: <SiCplusplus />, color: "#00599C" },
+      { name: "VS Code", icon: <VscVscode />, color: "#007ACC" },
+      { name: "Antigravity", icon: <BsStars />, color: "#C084FC" },
+      { name: "Postman", icon: <SiPostman />, color: "#FF6C37" },
+      { name: "Git", icon: <FaGitAlt />, color: "#F05032" },
+      { name: "GitHub", icon: <FaGithub />, color: "#FFFFFF" },
+      { name: "Vercel", icon: <SiVercel />, color: "#FFFFFF" },
+      { name: "Netlify", icon: <SiNetlify />, color: "#00C8C8" },
+    ],
+  },
+];
+
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: (custom = 1) => ({
@@ -12,132 +88,93 @@ const fadeUp = {
 
 function skills() {
   return (
-    <div
-    id='Skills'
-    className='h-full w-screen flex justify-center bg-black text-3xl font-bold pt-10 scroll-smooth'
+     <section
+      id="Skills"
+      className="bg-black py-20 px-5 text-white"
     >
-      <div className='max-w-6xl w-full'>
-        <motion.h1
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-          className='pt-10 text-2xl font-bold sm:text-2xl md:text-3xl text-center text-white mb-10'
-        >Skills</motion.h1>
-      <div
-      id='btn-container'
-      className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 text-center px-2 sm:px-10 py-10 border-1 rounded-2xl mx-5'
-      >
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-1' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >NEXT.JS</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-2' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >REACT.JS</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-3' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >MONGODB</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-4' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >NODE.JS</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-5' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >GITHUB</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-6' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >GIT</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-7' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400  p-2 mx-2'
-        >JAVASRRIPT</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-8' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >TAILWIND</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-9' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >CSS</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-10' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >HTML</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-11' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >C++</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-12' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >C</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-13' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >VERCEL</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-14' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >NETLIFY</motion.p>
-        <motion.p 
-        initial="hidden"
-        whileInView="visible"
-        variants={fadeUp}
-        id='btn-15' 
-        className='rounded-lg text-center border-1 border-blue-400 text-white text-lg sm:text-xl md:text-2xl duration-400 p-2 mx-2'
-        >BOOTSTRAP</motion.p>
+      <div className="max-w-7xl mx-auto">
+
+        <motion.h2
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          // viewport={{ once: true }}
+          className="text-4xl font-bold text-center mb-4"
+        >
+          Skills
+        </motion.h2>
+
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          // viewport={{ once: true }}
+          className="text-zinc-400 mt-3 text-center mb-14"
+        >
+          Technologies I use to build modern web applications.
+        </motion.p>
+
+        <div 
+        className="grid md:grid-cols-2 xl:grid-cols-2 gap-8 w-[85%] m-auto">
+
+          {skillCategories.map((category) => (
+
+            <motion.div
+              key={category.title}
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              // viewport={{ once: true }}
+              // whileHover={{
+              //   y: -8,
+              //   scale: 1.02,
+              // }}
+              // transition={{ duration: .3 }}
+              className="rounded-3xl border border-zinc-800 bg-zinc-900/60 backdrop-blur-md p-7 
+              hover:border-blue-500 hover:shadow-[0_0_30px_rgba(59,130,246,.2)]"
+            >
+
+              <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
+                <span className="text-3xl">{category.emoji}</span>
+                {category.title}
+              </h3>
+
+              <div className="flex flex-wrap gap-3">
+
+                {category.skills.map((skill) => (
+
+                  <motion.div
+                    key={skill.name}
+                    whileHover={{
+                      scale: 1.08,
+                      rotate: 2,
+                      borderColor: skill.color,
+                      backgroundColor: `${skill.color}1a`, // 10% opacity brand color background
+                    }}
+                    transition={{ duration: 0.2 }}
+                    className="flex items-center gap-2 rounded-full border border-zinc-700 px-4 py-2 text-md cursor-pointer"
+                  >
+
+                    <span className="text-xl" style={{ color: skill.color }}>
+                      {skill.icon}
+                    </span>
+
+                    <span>{skill.name}</span>
+
+                  </motion.div>
+
+                ))}
+
+              </div>
+
+            </motion.div>
+
+          ))}
+
+        </div>
 
       </div>
-        
-      </div>
-
-    </div>
+    </section>
   )
 }
 

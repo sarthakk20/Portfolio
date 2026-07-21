@@ -1,8 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
-const MotionLink = motion("a");
-// import Link from 'next/link'
+// Nav component
 
 function Nav() {
    const { scrollY } = useScroll();
@@ -55,12 +54,13 @@ function Nav() {
                   width: 0,
                   opacity: 0,
                   marginLeft: 0,
+                  color: "#3b82f6",
                 },
                 hover: {
                   width: "auto",
                   opacity: 1,
                   marginLeft: 6,
-                  color: "#089df9ff",
+                  color: "#089df9",
                 },}}
                   transition={{
                   duration: 0.3,
@@ -76,9 +76,10 @@ function Nav() {
           <div className='pl-8'>
 
             <motion.a
+            initial={{ color: "#ffffff" }}
             whileHover={{
               scale: 1.01,
-              color: "#5fc8dbff",
+              color: "#5fc8db",
               filter: "drop-shadow(0px 0px 2px rgba(59,130,246,.7))",
               textShadow: `
                 0 0 1px rgba(59,130,246,.8),
@@ -96,9 +97,10 @@ function Nav() {
             Home</motion.a>
 
             <motion.a
+            initial={{ color: "#ffffff" }}
             whileHover={{
               scale: 1.01,
-              color: "#5fc8dbff",
+              color: "#5fc8db",
               filter: "drop-shadow(0px 0px 2px rgba(59,130,246,.7))",
               textShadow: `
                 0 0 1px rgba(59,130,246,.8),
@@ -116,9 +118,10 @@ function Nav() {
             About</motion.a>
 
             <motion.a
+            initial={{ color: "#ffffff" }}
             whileHover={{
               scale: 1.01,
-              color: "#5fc8dbff",
+              color: "#5fc8db",
               filter: "drop-shadow(0px 0px 2px rgba(59,130,246,.7))",
               textShadow: `
                 0 0 1px rgba(59,130,246,.8),
@@ -136,9 +139,10 @@ function Nav() {
             Skills</motion.a>
 
             <motion.a
+            initial={{ color: "#ffffff" }}
             whileHover={{
               scale: 1.01,
-              color: "#5fc8dbff",
+              color: "#5fc8db",
               filter: "drop-shadow(0px 0px 2px rgba(59,130,246,.7))",
               textShadow: `
                 0 0 1px rgba(59,130,246,.8),
@@ -156,9 +160,10 @@ function Nav() {
             Projects</motion.a>
 
             <motion.a
+            initial={{ color: "#ffffff" }}
             whileHover={{
               scale: 1.01,
-              color: "#5fc8dbff",
+              color: "#5fc8db",
               filter: "drop-shadow(0px 0px 2px rgba(59,130,246,.7))",
               textShadow: `
                 0 0 1px rgba(59,130,246,.8),

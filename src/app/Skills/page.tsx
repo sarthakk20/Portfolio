@@ -149,6 +149,7 @@ function skills() {
 
                   <motion.div
                     key={skill.name}
+                    initial={{ backgroundColor: "rgba(0, 0, 0, 0)", borderColor: "#3f3f46" }}
                     whileHover={{
                       scale: 1.08,
                       rotate: 2,

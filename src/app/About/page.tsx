@@ -23,7 +23,7 @@ return (
         whileInView="visible"
         variants={fadeUp}
         custom={1}
-        className="text-2xl sm:text-2xl md:text-3xl font-bold text-center mb-6">
+        className="text-2xl sm:text-2xl md:text-3xl font-bold text-center mb-8">
         About Me</Motion.h2>
         <Motion.p 
         initial="hidden"
@@ -44,8 +44,16 @@ return (
         whileInView="visible"
         variants={fadeUp}
         custom={1}
-        className="text-2xl sm:text-2xl md:text-3xl font-bold text-center mb-6">
+        className="text-2xl sm:text-2xl md:text-3xl font-bold text-center">
         Education</Motion.h2>
+        <Motion.p 
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeUp}
+        custom={1}
+        className="text-center text-gray-400 mt-4 max-w-2xl mx-auto mb-12">
+        My educational journey that laid the foundation for my career in technology.      
+        </Motion.p>
         <Motion.div 
          id="outer-edu-div"
          className="relative max-w-4xl mx-auto"
@@ -67,9 +75,7 @@ return (
               custom={1}
               className=" relative w-full overflow-hidden mb-4 rounded-2xl border border-blue-500/20 
                 bg-gradient-to-br 
-                from-[#0f172a] 
-                via-[#172554]
-                to-[#0f172a]
+                from-[#0f172a] via-[#172554] to-[#0f172a]/60
                 p-6
                 shadow-lg
                 transition-all
@@ -107,7 +113,7 @@ return (
           // custom={4}
           // viewport={{ once: true }}
           className="relative w-full overflow-hidden rounded-2xl border border-blue-500/20 
-          bg-gradient-to-br from-[#0f172a] via-[#172554] to-[#0f172a] p-6 shadow-lg mb-4 transition-all 
+          bg-gradient-to-br from-[#0f172a] via-[#172554] to-[#0f172a]/60 p-6 shadow-lg mb-4 transition-all 
           duration-300 hover:border-blue-400/40 hover:shadow-[0_0_35px_rgba(59,130,246,0.2)]"
         >
           <div
@@ -161,7 +167,7 @@ return (
           // custom={5}
           // viewport={{ once: true }}
           className="relative w-full overflow-hidden rounded-2xl border border-blue-500/20 mb-4
-            bg-gradient-to-br from-[#0f172a] via-[#172554] to-[#0f172a] p-6 shadow-lg
+            bg-gradient-to-br from-[#0f172a] via-[#172554] to-[#0f172a]/60 p-6 shadow-lg
             transition-all duration-300 hover:border-blue-400/40 hover:shadow-[0_0_35px_rgba(59,130,246,0.2)]">
           <div className="absolute -top-20 -right-20 h-56 w-56 rounded-full bg-blue-500/20 blur-3xl pointer-events-none">
           </div>

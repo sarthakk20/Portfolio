@@ -23,7 +23,9 @@ import {
   SiVercel,
   SiNetlify,
   SiCplusplus,
-  SiMysql
+  SiMysql,
+  SiRedux,
+  SiMongoose
 } from "react-icons/si";
 import { VscCode, VscVscode } from "react-icons/vsc";
 import { BsStars } from "react-icons/bs";
@@ -37,6 +39,7 @@ const skillCategories = [
       { name: "CSS3", icon: <FaCss3Alt />, color: "#1572B6" },
       { name: "JavaScript", icon: <SiJavascript />, color: "#F7DF1E" },
       { name: "React", icon: <FaReact />, color: "#61DAFB" },
+      { name: "Redux", icon: <SiRedux />, color: "#764ABC" },
       { name: "Next.js", icon: <SiNextdotjs />, color: "#FFFFFF" },
       { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "#06B6D4" },
       { name: "Bootstrap", icon: <FaBootstrap />, color: "#7952B3" },
@@ -57,6 +60,7 @@ const skillCategories = [
     emoji: "🗄️",
     skills: [
       { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" },
+      { name: "Mongoose", icon: <SiMongoose />, color: "#880000" },
       { name: "SQL", icon: <SiMysql />, color: "#4479A1" },
     ],
   },  
@@ -130,7 +134,7 @@ function skills() {
               //   scale: 1.02,
               // }}
               // transition={{ duration: .3 }}
-              className="rounded-3xl border border-zinc-800 bg-zinc-900/60 backdrop-blur-md p-7 
+              className="rounded-3xl border border-zinc-800 bg-zinc-900/10 backdrop-blur-md p-7 
               hover:border-blue-500 hover:shadow-[0_0_30px_rgba(59,130,246,.2)]"
             >
 

@@ -44,7 +44,7 @@ className="py-6 text-center text-gray-500 text-[12px] sm:text-sm bg-black"
   </div>
 
   <p className="text-gray-500 mt-2 hover:text-gray-300 transition-colors duration-300">
-    ©{new Date().getFullYear()} Sarthak.Dev | All rights reserved.
+    ©{new Date().getFullYear()} sarthak sonawane | All rights reserved.
   </p>
 </div>
 </footer>

@@ -89,7 +89,7 @@ function Hero() {
             }}
             id='resume' 
             className="mt-6 flex justify-center hover:cursor-pointer text-sm sm:text-md md:text-lg">
-            <a href="sarthak_cv (3).pdf" download>
+            <a href="sarthak_cv(1) (1).pdf" download>
             <button 
             className='hover:cursor-pointer flex items-center gap-2'
             type="button">

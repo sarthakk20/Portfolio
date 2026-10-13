@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
+      ? "https://sarthakk20.vercel.app/"
       : "http://localhost:3000"
   ),
 

@@ -15,7 +15,7 @@ const projects = [
     description: "Developed a secure full-stack authentication application with user registration, login, profile management, and a complete password recovery workflow. Integrated JWT for secure authentication and route protection, while using Mailtrap to deliver email verification and password reset links, ensuring a seamless and secure user experience.",
     tech: ["TypeScript", "TailwindCSS", "Express.js", "Next.js", 'MongoDB', "MailTrap", "JWT"],
     image: "authImg.jpg",
-    demo: "https://github.com/sarthakk20/Next.js.git",
+    demo: "https://auth-next-js-pi.vercel.app/",
     github: "https://github.com/sarthakk20/Next.js.git",
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     description: "Developed a modern developer portfolio using Next.js, Tailwind CSS, and Framer Motion, featuring responsive design, smooth animations, and a clean user experience. Implemented a contact form with Resend to enable direct email communication and deployed the application on Vercel for high performance and reliability.",
     tech: ["TypeScript", "Next.js", "Framer Motion", "TailwindCSS", "Vercel"],
     image: "image.png",
-    demo: "https://sarthakdev-orcin.vercel.app/",
+    demo: "https://sarthakk20.vercel.app/",
     github: "https://github.com/sarthakk20/Portfolio.git",
   },
   {
@@ -141,16 +141,16 @@ export default function Projects() {
 
             </div>
 
-            {/* GitHub */}
+            {/* Demo */}
 
             <div className="mt-8">
 
               <a
-                href={project.github}
+                href={project.demo}
                 target="_blank"
                 className="inline-flex items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 px-6 py-3 text-sm font-medium transition hover:border-blue-500 hover:bg-blue-600 hover:text-white"
               >
-                View Source Code →
+                View Demo →
               </a>
 
             </div>
